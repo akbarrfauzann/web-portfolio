@@ -74,7 +74,7 @@ export const ContactSection = () => {
               </h4>
               <div className="flex justify-center md:justify-start space-x-4">
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/muhammad-akbar-fauzan-susetyo-50697b260/"
                   target="_blank"
                   className="hover:text-primary transition-colors"
                   aria-label="Linkedin"
@@ -82,7 +82,7 @@ export const ContactSection = () => {
                   <Linkedin className="w-6 h-6" />
                 </a>
                 <a
-                  href="#"
+                  href="https://github.com/akbarrfauzann"
                   target="_blank"
                   className="hover:text-primary transition-colors"
                   aria-label="GitHub"
@@ -90,7 +90,7 @@ export const ContactSection = () => {
                   <Github className="w-6 h-6" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/akbarrfauzannn/"
                   target="_blank"
                   className="hover:text-primary transition-colors"
                   aria-label="Instagram"
