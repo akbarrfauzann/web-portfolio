@@ -152,16 +152,6 @@
   @apply px-6 py-2 rounded-xl bg-primary text-primary-foreground font-medium transition-all duration-300 hover:shadow-[0_0_20px_rgba(74,106,89,0.5)] hover:scale-105 active:scale-95;
 }
 
-@utility star {
-  @apply absolute bg-white rounded-full;
-  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
-}
-
-@utility meteor {
-  @apply absolute bg-linear-to-r from-white via-white to-transparent rounded-full;
-  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.3);
-}
-
 #root {
   max-width: 100%;
   margin: 0 auto;
