@@ -66,7 +66,7 @@ export const AboutSection = () => {
               </a>
 
               <a
-                href="/path-to-your-cv.pdf"
+                href="/public/Muhammad Akbar Fauzan Susetyo - CV.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-xl border-2 border-primary px-6 py-2 text-center font-medium text-primary transition-all duration-300 hover:bg-primary hover:shadow-[0_0_20px_rgba(74,106,89,0.5)] hover:scale-105 active:scale-95 hover:text-primary-foreground"
