@@ -5,7 +5,7 @@ import {
   Mail,
   MapPin,
   Phone,
-  Send,
+  MessageCircle,
 } from "lucide-react";
 import { cn } from "../lib/utils";
 
@@ -21,13 +21,15 @@ export const ContactSection = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          {/* LEFT */}
           <div className="space-y-8">
             <h3 className="text-2xl font-semibold mb-6 text-center md:text-left">
               Contact Information
             </h3>
 
             <div className="space-y-6">
-              <div className="flex flex-col items-center md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-4">
+              {/* Email */}
+              <div className="flex flex-col items-center md:flex-row md:space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Mail className="w-6 h-6 text-primary" />
                 </div>
@@ -35,14 +37,15 @@ export const ContactSection = () => {
                   <h4 className="font-medium">Email</h4>
                   <a
                     href="mailto:makbarfauzans@gmail.com"
-                    className="text-muted-foreground transition-colors hover:text-primary"
+                    className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     makbarfauzans@gmail.com
                   </a>
                 </div>
               </div>
 
-              <div className="flex flex-col items-center md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-4">
+              {/* Phone */}
+              <div className="flex flex-col items-center md:flex-row md:space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Phone className="w-6 h-6 text-primary" />
                 </div>
@@ -50,14 +53,15 @@ export const ContactSection = () => {
                   <h4 className="font-medium">Phone</h4>
                   <a
                     href="tel:+628889013488"
-                    className="text-muted-foreground transition-colors hover:text-primary"
+                    className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     +62 888 9013 488
                   </a>
                 </div>
               </div>
 
-              <div className="flex flex-col items-center md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-4">
+              {/* Location */}
+              <div className="flex flex-col items-center md:flex-row md:space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <MapPin className="w-6 h-6 text-primary" />
                 </div>
@@ -68,6 +72,7 @@ export const ContactSection = () => {
               </div>
             </div>
 
+            {/* Social */}
             <div className="pt-8">
               <h4 className="font-medium mb-4 text-center md:text-left">
                 Connect With Me
@@ -76,24 +81,29 @@ export const ContactSection = () => {
                 <a
                   href="https://www.linkedin.com/in/muhammad-akbar-fauzan-susetyo-50697b260/"
                   target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
                   className="hover:text-primary transition-colors"
-                  aria-label="Linkedin"
                 >
                   <Linkedin className="w-6 h-6" />
                 </a>
+
                 <a
                   href="https://github.com/akbarrfauzann"
                   target="_blank"
-                  className="hover:text-primary transition-colors"
+                  rel="noopener noreferrer"
                   aria-label="GitHub"
+                  className="hover:text-primary transition-colors"
                 >
                   <Github className="w-6 h-6" />
                 </a>
+
                 <a
                   href="https://www.instagram.com/akbarrfauzannn/"
                   target="_blank"
-                  className="hover:text-primary transition-colors"
+                  rel="noopener noreferrer"
                   aria-label="Instagram"
+                  className="hover:text-primary transition-colors"
                 >
                   <Instagram className="w-6 h-6" />
                 </a>
@@ -101,71 +111,27 @@ export const ContactSection = () => {
             </div>
           </div>
 
-          <div className="bg-card rounded-lg shadow-lg p-8">
-            <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
+          {/* RIGHT */}
+          <div className="bg-card rounded-lg shadow-lg p-8 flex flex-col items-center justify-center">
+            <MessageCircle className="w-16 h-16 text-primary mb-6" />
+            <h3 className="text-2xl font-semibold mb-4 text-center">
+              Let's Chat on WhatsApp
+            </h3>
+            <p className="text-muted-foreground text-center mb-8">
+              Click the button below to send me a message directly on WhatsApp
+            </p>
 
-            <form className="space-y-6">
-              <div>
-                <label
-                  htmlFor="name"
-                  className="block text-md font-medium text-left mb-2"
-                >
-                  Your Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  className="w-full px-3 py-4 rounded-md border border-input bg-background text-foreground focus:outline-hidden focus:ring-2 focus:ring-primary"
-                  placeholder="Enter your name"
-                  required
-                />
-              </div>
-
-              <div>
-                <label
-                  htmlFor="email"
-                  className="block text-md font-medium text-left mb-2"
-                >
-                  Your Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  className="w-full px-3 py-4 rounded-md border border-input bg-background text-foreground focus:outline-hidden focus:ring-2 focus:ring-primary"
-                  placeholder="Enter your email"
-                  required
-                />
-              </div>
-
-              <div>
-                <label
-                  htmlFor="message"
-                  className="block text-md font-medium text-left mb-2"
-                >
-                  Your Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="4"
-                  className="w-full px-3 py-4 rounded-md border border-input bg-background text-foreground focus:outline-hidden focus:ring-2 focus:ring-primary resize-none"
-                  placeholder="Write your message here..."
-                  required
-                />
-              </div>
-
-              <button
-                type="submit"
-                className={cn(
-                  "cosmic-button w-full h-12 flex items-center justify-center gap-2",
-                )}
-              >
-                Send Message
-                <Send size={16} />
-              </button>
-            </form>
+            <a
+              href="https://wa.me/628889013488"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={cn(
+                "cosmic-button w-full h-12 flex items-center justify-center gap-2",
+              )}
+            >
+              <MessageCircle size={20} />
+              Connect to WhatsApp
+            </a>
           </div>
         </div>
       </div>
