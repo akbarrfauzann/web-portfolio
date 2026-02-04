@@ -55,13 +55,13 @@ const projects = [
   },
   {
     id: 6,
-    title: "Adidas Landing Page",
+    title: "E-commerce Landing Page",
     description:
-      "A product landing page inspired by Adidas branding, focused on visual presentation, responsiveness, and clean UI interactions.",
-    image: "/projects/adidas.png",
-    tags: ["HTML", "CSS", "JavaScript"],
-    demoUrl: "https://akbarrfauzann.github.io/adidas-design/",
-    githubUrl: "https://github.com/akbarrfauzann/adidas-design",
+      "A modern e-commerce landing page featuring product showcases, user authentication, and a seamless shopping experience.",
+    image: "/projects/ecommerce.png",
+    tags: ["React", "Tailwind CSS", "Typescript", "Firebase"],
+    demoUrl: "https://akbarrfauzann.github.io/ecommerce-app/",
+    githubUrl: "https://github.com/akbarrfauzann/ecommerce-app",
   },
   {
     id: 7,
